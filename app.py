@@ -70,4 +70,4 @@ def register():
 
 if __name__ == '__main__':
     app.secret_key = 'mysecretkey'  # Necesario para usar flash messages
-    app.run(port=8001, debug=True)
+    app.run(port=5000, debug=True)
