@@ -74,11 +74,13 @@ section {
     padding: 0;
 }
 
-.hero__imagen__fondo {
+.hero__imagen__flores {
     width: 100%;
     height: 100%;
     display: block;
 }
+
+
 
 .hero__textos {
     display: flex;
