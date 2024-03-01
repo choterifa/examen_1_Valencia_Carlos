@@ -1,0 +1,41 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+
+.formulario {
+    height: 90vh;
+    background-color: red;
+}
+
+.formulario__alto {
+    height: 100%;
+}
+
+.form-signin {
+    max-width: 460px;
+    padding: 1.1rem;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

@@ -1,0 +1,24 @@
+{%extends 'base.html'%} <!--extneide de base-->
+
+{%block title%} index {%endblock%}
+
+{%block index%}
+<!--Hero -->
+<section class="hero">
+    <div class="hero__contenedor"> <!--flex-->
+        <figure class="hero__imagen__contenedor">
+            <img class="hero__imagen__flores" src="../static/imagenes/Hero-flores.jpg" alt="Foto de mi ">
+        </figure>
+        <div class="hero__textos">
+            <h1 class="hero__title">Este es mi portafolio ❤️</h1>
+            <h1 class="hero__title">Valencia Hernández Carlos E</h1>
+            <a href="/sobremi" rel="noopener noreferrer">
+                <button type="button" class="btn btn-primary hero__btn">Contratame
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+    {%endblock%}
+
+</section>

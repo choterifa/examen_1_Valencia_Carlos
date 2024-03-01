@@ -1,0 +1,59 @@
+{%extends 'base.html'%} <!--extneide de base-->
+
+<!--titulo de la pagina-->
+{%block title%} Sobre mi {%endblock%}
+
+{%block sobremi%}
+<!--Sobre mi-->
+<section class="sobre__mi seccion__oscura" id="sobremi">
+    <div class="sobre__mi__contenedor">
+        <h2 class="seccion__titulo">Conoce más sobre mí</h2>
+        <p class="seccion__textos">Soy un apasionado de la tecnología y disfruto explorando interfaces.
+            tengo un interés particular en el patinaje de velocidad. Tengo 20 años y resido en mi querido México,
+            donde aprovecho cada oportunidad para sumergirme en el diseño y por supuesto, disfrutar de un buen
+            descanso.
+        </p>
+    </div>
+</section>
+
+<!--parte 2-->
+<!-- carrusel -->
+<section class="testimonios seccion__oscura">
+    <h2 class="seccion-titulo">Mis fotos</h2>
+    <div id="testimonios-carrusel" class="carousel slide carousel-dark" data-bs-touch="false">
+        <div class="carousel-inner"> <!--parte de imagenes-->
+            <div class="carousel-item active"><!--active para la principal-->
+                <img src="../static/imagenes/arduino1.jpeg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/arduino6.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/arte1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/Boostrap.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/arduino3.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/arduino1.jpeg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/arte1.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <!--las flcehas son los botones-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+{%endblock%}
