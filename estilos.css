@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --imagen: url()
+    --imagen: url(imagenes/Gato.jpg);
+    --gradiente-hero: linear-gradient(135deg, #667eea86 0%, #764ba28e 100%);
 }
 
 
@@ -9,16 +11,17 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
-body {
-    background-color: red;
-}
 
+
+/*Barra de navegacion*/
 .navbar {
-    padding: 2rem;
-    background-color: #f5f6f7;
+    height: 10vh;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 0px #0000002c;
+    background-color: #ffffff;
 }
 
 .navbar-collapse {
@@ -27,12 +30,23 @@ body {
     justify-content: space-between;
 }
 
+.ul__navbar {
+    gap: 15px;
+}
+
+.logo {
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+}
+
 h1 {
     font-size: 2.5rem;
     font-family: 'Raleway';
 }
 
 section {
+    /*todos los secciones*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,38 +56,56 @@ section {
 /*Seccion del Hero*/
 
 .hero {
-    min-height: 420px;
-    text-align: center;
-    background-color: #f5f6f7;
-    opacity: 0.5;
+    height: 90vh;
 }
 
-.hero__contenedor__textos {
-    padding: 3rem;
-    overflow: hidden;
-    padding-bottom: 30px;
+.hero__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
 }
 
-.hero__imagen__desarrollador {
-    width: 200px;
-    border-radius: 50%;
-    margin: 22px;
+.hero__imagen__contenedor {
+    width: 50vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.hero__contenedor__textos h2 {
-    margin-top: 10px;
-    padding: 5px;
-    font-size: 1.5rem;
-    color: #615151;
+.hero__imagen__fondo {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-.hero h1 {
+.hero__textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    width: 50%;
+}
+
+.hero__title {
+    font-size: 40px;
     font-weight: bold;
+}
+
+.hero__btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
 }
 
 li a {
     text-decoration: none;
 }
+
 
 .seccion__oscura {
     color: #f5f6f7;
@@ -84,74 +116,75 @@ li a {
 /*Sobre mi*/
 
 .sobre__mi {
-    height: 450px;
-    padding: 20px;
+    height: 500px;
 }
 
-.sobre__mi .contenedor {
-    max-width: 650px;
+.sobre__mi__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 750px;
     text-align: center;
 }
 
 .seccion__titulo {
-    font-size: 2rem;
-    padding: 15px 0px;
     font-family: 'Raleway';
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 15px 0px;
 }
 
 .seccion__textos {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 45px;
 }
 
 /*Experiencia*/
 .experiencia {
-    padding: 110px 10px;
-    /* border: 1px solid red; */
+    height: 650px;
+    margin: 0;
 }
 
-.experiencia .columna {
+.experiencia__container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-    border: 1px solid #8080804d;
-    transition: all 0.2s ease-in;
+    height: 100%;
+    width: 100%;
 }
 
-.experiencia .columna:hover {
-    color: white;
-    background-color: #1b1b32;
-}
+.experiencia__barras__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    margin: 20px;
+    text-transform: capitalize;
 
-.seccion__clara {
-    color: #1b1b32;
-    background-color: #f5f6f7;
 }
 
 .experiencia__titulo {
-    margin: 10px 0;
-    font-size: 25px;
+    text-align: center;
     font-weight: bold;
-    text-transform: capitalize;
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+    padding: 1px;
 }
 
-.experiencia i {
-    /*iconos*/
-    display: inline-block;
-    font-size: 35px;
-    color: #7ade30;
-    background-color: #0a0a23ef;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+.experiencia__titulos {
+    margin: 0;
+    width: 18%;
 }
 
-.badge {
-    margin: 3px;
-    text-transform: uppercase;
+.progress {
+    width: 100%;
 }
+
+
 
 /* Proyectos */
 .proyectos__recientes {
@@ -159,30 +192,32 @@ li a {
     padding-bottom: 90px;
 }
 
-.seccion-titulo {
-    font-weight: bold;
-    font-size: 2.7rem;
-    margin-bottom: 20px;
-}
+
 
 .proyectos__recientes img {
     height: 100%;
     width: 100%;
-    padding: 10px;
     border-radius: 10px;
     display: block;
+    padding: 10px;
     transition: all 0.2s ease-in;
     /*desvanecer imagen*/
 }
 
 .proyectos-contenedor {
-    padding-top: 60px;
     margin-bottom: 40px;
+}
+
+.seccion-titulo {
+    font-weight: bold;
+    font-size: 2.7rem;
+    margin: 30px;
 }
 
 .seccion__descripcion {
     font-size: 1.2rem;
     color: #584e4e;
+    margin-bottom: 40px;
 }
 
 .overlay {
@@ -253,9 +288,6 @@ li a {
 
 }
 
-.btn {
-    margin-top: 30px;
-}
 
 /*Carrusel*/
 .testimonios {

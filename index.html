@@ -36,115 +36,126 @@
             <div class="collapse navbar-collapse" id="navbar-toggler"> <!--contenedor del icono y enlaces-->
 
                 <a class="navbar-brand" href="#"> <!--imagen de inicio-->
-                    <img src="imagenes/icono.png" width="40" alt="Logo de la pagina web">
+                    <img src="imagenes/Patin.jpg" width="40" alt="Logo de la pagina web" class="logo">
                 </a>
 
-                <ul class="navbar-nav d-flex justify-content-center align-items-center"> <!--Crear flex y alinear-->
+                <ul class="navbar-nav ul__navbar d-flex justify-content-center align-items-center">
+                    <!--Crear flex y alinear-->
                     <li class="nav-item">
                         <a class="nav-link" href="#sobremi">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                        <a class="nav-link" href="#proyectos">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                        <a class="nav-link" href="#testimonios">Habilidades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contactame</a>
                     </li>
                 </ul>
-
             </div>
         </div>
-
     </nav>
 
 
 
     <!--Hero -->
-    <section class="hero align-items-stretch">
-        <div class="hero__contenedor__textos d-flex flex-column justify-content-center align-items-center"> <!--flex-->
-            <img class="hero__imagen__desarrollador" src="imagenes/Patin.jpg" alt="Foto de mi ">
-            <h1>Hola, soy Carlos Eduardo Valencia</h1>
-            <h2>Estoy practicando con Boostrap ❤️</h2>
+    <section class="hero">
+        <div class="hero__contenedor"> <!--flex-->
+            <figure class="hero__imagen__contenedor">
+                <img class="hero__imagen__fondo" src="imagenes/Hero-flores.jpg" alt="Foto de mi ">
+            </figure>
+            <div class="hero__textos">
+                <h1 class="hero__title">Este es mi portafolio ❤️</h1>
+                <h1 class="hero__title">Valencia Hernández Carlos E</h1>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <button type="button" class="btn btn-primary hero__btn">Contratame
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </button>
+                </a>
+            </div>
+
         </div>
         <div class="hero__inferior">
-            <img class="hero__inferior__imagen img-fluid" ima src="imagenes/hero-inferior.svg"
-                alt="Computadoras, Css Boostrap">
+            <!-- <img class="hero__inferior__imagen img-fluid" ima src="imagenes/hero-inferior.svg"
+                alt="Computadoras, Css Boostrap"> -->
         </div>
+
+
     </section>
 
     <!--Sobre mi-->
     <section class="sobre__mi seccion__oscura" id="sobremi">
-        <div class="contenedor">
+        <div class="sobre__mi__contenedor">
             <h2 class="seccion__titulo">Conoce más sobre mi</h2>
-            <p class="seccion__textos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex beatae totam
-                vel debitis autem magni
-                facere illo, nesciunt voluptates doloremque consequuntur quo optio voluptatibus laboriosam sit labore
-                doloribus odit.
+            <p class="seccion__textos">Soy un apasionado de la tecnología y disfruto explorando interfaces.
+                tengo un interés particular en el patinaje de velocidad. Tengo 20 años y resido en mi querido México,
+                donde aprovecho cada oportunidad para sumergirme en el diseño y por supuesto, disfrutar de un buen
+                descanso.
             </p>
         </div>
     </section>
 
-    <!--Experiencia-->
-    <section class="experiencia seccion__clara">
-        <div class="container text-center">
+    <!--Experiencias-->
+    <section class="experiencia">
+        <div class="experiencia__container">
 
-            <div class="row"><!--Usando grilla de boostrap -->
-
-                <!--Desarrollo web-->
-                <div class="columna col-12 col-md-4"> <!--para pequeños y medianos-->
-                    <i class="bi bi-laptop"></i> <!--Icono de BS-->
-                    <p class="experiencia__titulo">Desarollo web</p>
-                    <p class="experiencia__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-                        facere iusto mollitia
-                        itaqueaccusantium delectus, optio corporis autem dolorum excepturi consequuntur quo dolorem
-                    </p>
-                    <div class="badge-contenedor"> <!--Insignias-->
-                        <span class="badge text-bg-primary">HTML</span>
-                        <span class="badge text-bg-primary">SCC</span>
-                        <span class="badge text-bg-primary">JAVASCRIPT</span>
-                        <span class="badge text-bg-primary">PYTHON</span>
-                    </div>
+            <h2 class="experiencia__titulo">Experiencia</h2>
+            <div class="experiencia__barras__container">
+                <p class="experiencia__titulos">html</p>
+                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
                 </div>
-
-                <!--Articulo-->
-                <div class="columna col-12 col-md-4">
-                    <i class="bi bi-book"></i>
-                    <p class="experiencia__titulo">Articulos</p>
-                    <p class="experiencia__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-                        facere iusto mollitia
-                        itaqueaccusantium delectus, optio corporis autem dolorum excepturi consequuntur quo dolorem
-                    </p>
-                    <div class="badge-contenedor"> <!--Insignias-->
-                        <span class="badge text-bg-primary">Escribir</span>
-                        <span class="badge text-bg-primary">Editar</span>
-                        <span class="badge text-bg-primary">Blogs</span>
-                    </div>
-
-                </div>
-                <!--Estudiante-->
-                <div class="columna col-12 col-md-4">
-                    <i class="bi bi-journal-bookmark-fill"></i>
-                    <p class="experiencia__titulo">Estudios</p>
-                    <p class="experiencia__parrafo">Omnis quae libero qui qui ea error architecto. Ullam nulla iste aut
-                        blanditiis eos numquam.
-                        Libero perspiciatis quia
-                        autem veritatis aliquam. Est natus ut non odio architecto. Numquam magni nobis molestiae veniam
-                    </p>
-                    <div class="badge-contenedor"> <!--Insignias-->
-                        <span class="badge text-bg-primary">BOOSTRAP</span>
-                        <span class="badge text-bg-primary">SCC</span>
-                        <span class="badge text-bg-primary">HTML</span>
-                        <span class="badge text-bg-primary">PYTHON</span>
-                    </div>
-
-                </div>
-
             </div>
+
+            <div class="experiencia__barras__container">
+                <p class="experiencia__titulos">css</p>
+                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <div class="experiencia__barras__container">
+                <p class="experiencia__titulos">Boostrap</p>
+                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                </div>
+            </div>
+
+            <div class="experiencia__barras__container">
+                <p class="experiencia__titulos">flask</p>
+                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"></div>
+                </div>
+            </div>
+
+            <div class="experiencia__barras__container">
+                <p class="experiencia__titulos">python</p>
+                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 15%"></div>
+                </div>
+            </div>
+
+            <div class="experiencia__barras__container">
+                <p class="experiencia__titulos">Ser buena onda</p>
+                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 110%"></div>
+                </div>
+            </div>
+
+
         </div>
 
     </section>
+
+
 
     <!-- Proyectos -->
     <section class="proyectos__recientes seccion__clara d-flex flex-column" id="proyectos">
@@ -154,7 +165,7 @@
         <!--Galeria de proyectos-->
         <div class="container text-center proyectos-contenedor">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="galeria__imagenes col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
                         <img src="imagenes/proyecto1.png" alt="proyecto1">
                         <div class="overlay">
@@ -170,7 +181,7 @@
                 </div>
 
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="galeria__imagenes col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
                         <img src="imagenes/proyecto2.png" alt="proyecto1">
                         <div class="overlay">
@@ -184,7 +195,7 @@
                     </div>
 
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="galeria__imagenes col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
                         <img src="imagenes/proyecto3.png" alt="proyecto1">
                         <div class="overlay">
@@ -198,7 +209,7 @@
                     </div>
 
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="galeria__imagenes col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
                         <img src="imagenes/proyecto4.png" alt="proyecto1">
                         <div class="overlay">
@@ -212,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="galeria__imagenes col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
                         <img src="imagenes/proyecto5.png" alt="proyecto1">
                         <div class="overlay">
@@ -226,7 +237,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="galeria__imagenes col-12 col-md-6 col-lg-4">
                     <div class="proyecto">
                         <img src="imagenes/proyecto6.png" alt="proyecto1">
                         <div class="overlay">
@@ -244,40 +255,6 @@
 
         <a href="" target="_blank" rel="noopener noreferrer">
             <button type="button" class="btn btn-primary">Ver más proyectos
-                <i class="bi bi-arrow-right-circle-fill"></i>
-            </button>
-        </a>
-
-    </section>
-
-    <!-- Lista -->
-    <section class="articulos justify-content-start">
-        <h2 class="seccion-titulo">Articulos</h2>
-        <div class="card">
-            <div class="card-header">
-                Más recientes
-            </div>
-            <ul class="list-group list-group-flush">
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Primer articulo</li>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Segundo articulo</li>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Tercer articulo</li>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Cuarto articulo</li>
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Quinto articulo</li>
-                </a>
-            </ul>
-        </div>
-
-        <a href="" target="_blank" rel="noopener noreferrer">
-            <button type="button" class="btn btn-primary">Ver más articulos
                 <i class="bi bi-arrow-right-circle-fill"></i>
             </button>
         </a>
