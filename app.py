@@ -16,8 +16,6 @@ def index():
     return render_template('index.html')
 
 
-
-
 @app.route('/sobremi')  # ruta principal
 def sobremi():
     return render_template('sobremi.html')
